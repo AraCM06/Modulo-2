@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Especificidad, Herencia y Cascada</title>
+    <link rel="stylesheet" href="./css/clase-3-especificidad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Mystery+Quest&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Clase 1</a>
+        <a href="clase-2-model-box.html">Clase 2</a>
+        <a href="starbucks.html">Starbucks</a>
+        <a href="clase-3-especificidad.html">Clase 3</a>
+    </nav>
+    <div class="contenedor">
+        <h1>Práctica de CSS: Especificidad, Herencia y Cascada</h1>
+
+        <!-- Ejemplo de especificidad -->
+        <p>Este es un párrafo normal con estilo base</p>
+        <p class="texto">Este párrafo tiene una clase</p>
+        <p id="parrafo-especial">Este párrafo tiene un ID</p>
+        <p class="texto destacado">Este párrafo tiene múltiples clases</p>
+
+        <!-- Ejemplo de herencia -->
+        <div class="seccion-familiar">
+            <h2>Ejemplo de Herencia</h2>
+            <p>Este texto hereda la fuente Georgia de su contenedor</p>
+            <div>
+                <p>Este texto también hereda los estilos del contenedor padre</p>
+            </div>
+        </div>
+
+        <div class="caja-simple">
+            <P>Una caja simple con borde punteado y fonde de color</P>
+        </div>
+
+        <p class="texto-centrado">Ete texto esta centrado</p>
+        <p class="texto-grande">Texto grande</p>
+        <p class="texto-pequeño">Texto pequeño</p>
+    </div>
+    
+</body>
+</html>
